@@ -1,0 +1,17 @@
+
+.container{
+    display: flex;
+    gap: 2%;
+}
+
+.size {
+    border-radius: 10px;
+    composes: primaryBg from "./colors.module.css";;
+    font-weight: bold;
+    padding: 1%;
+}
+.selected{
+    composes: size;
+    composes: secondaryBg from "./colors.module.css";;
+
+}

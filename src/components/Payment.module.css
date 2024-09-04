@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    composes: primaryBg from "./colors.module.css";
+    composes: primaryBorder from "./colors.module.css";
+
+}
+.information{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.sumRes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    composes: secondaryBg from "./colors.module.css";
+    composes: primaryBorder from "./colors.module.css";
+
+}
+.sumRes:hover{
+    box-shadow: 3px 3px 5px #BF754B;
+}
+.operator{
+    cursor: pointer;
+    width: 10px;
+    font-size: 2cap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.trash {
+    cursor: pointer;
+    align-self: flex-end;
+    composes: btn;
+    composes: primaryColor from "./colors.module.css";
+    composes: secondaryBg from "./colors.module.css";
+    margin-bottom: 2%;
+    font-size: x-large;
+}
+
+.trash:hover{
+    box-shadow: 3px 3px 5px #BF754B;
+}

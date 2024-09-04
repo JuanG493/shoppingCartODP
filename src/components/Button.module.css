@@ -1,0 +1,31 @@
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.primary {
+    composes: btn;
+    color: #FFFFFF;
+    composes: primaryBg from "./colors.module.css";
+}
+
+.secondary {
+    composes: btn;
+    composes: secondaryColor from "./colors.module.css";
+    composes: secondaryBg from "./colors.module.css";
+}
+
+.shopping {
+    composes: btn;
+    composes: primaryBg from "./colors.module.css";
+    composes: secondaryColor from "./colors.module.css";
+    composes: primaryBorder from "./colors.module.css";
+    composes: primaryBorder from "./colors.module.css";
+
+}
+
+.shopping:hover {
+    background-color: #8C4C27;
+    color: #F2F2F2
+}

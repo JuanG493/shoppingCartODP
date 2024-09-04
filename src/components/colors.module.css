@@ -1,0 +1,25 @@
+.primaryBg {
+    background-color: #D9C6A3
+}
+
+.secondaryBg {
+    background-color: #8C4C27
+}
+
+.thirdBg {
+    background-color: #BF754B;
+}
+
+.primaryColor {
+    color: #F2F2F2
+}
+
+.secondaryColor {
+    color: #0D0D0D
+}
+.primaryBorder{
+    border: 2px solid #8C4C27;
+}
+.secondaryBorder{
+    border: 2px solid #D9C6A3;
+}

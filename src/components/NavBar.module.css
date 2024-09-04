@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    gap: 5%;
+}
+
+.links>li {
+    text-decoration: none;
+    list-style: none;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
