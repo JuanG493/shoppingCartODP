@@ -1,7 +1,11 @@
+import styles from "./Footer.module.css";
+
 function FooterComp() {
     return (
-        <div>
-            <h1>FOOTER</h1>
+        <div className={styles.container}>
+            <h5>
+                ODIN PROJECT &#64; Juan David Guarin
+            </h5>
         </div>
     )
 }

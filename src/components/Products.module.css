@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    
+}

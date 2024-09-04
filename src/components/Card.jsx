@@ -6,7 +6,7 @@ const CardWhitImg = (props) => {
     return (
         <div className={styles.container}>
             <img src={props.srcImg} alt={props.name} className={styles.img} />
-            <button>
+            <button className={styles.button}>
                 <Link to={props.to} state={props.info}>
                     {props.name}</Link>
             </button>

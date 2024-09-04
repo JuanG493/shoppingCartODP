@@ -5,10 +5,9 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Request from "../util/getRequest";
 import CardWhitImg from "./Card";
+import styles from "./Categories.module.css";
 
 const token = import.meta.env.VITE_API_TOKEN;
-
-
 
 let nextId = 0;
 const Categories = () => {
@@ -42,7 +41,7 @@ const Categories = () => {
     }, [info])
 
     return (
-        <div key={nextId++}>
+        <div className={styles.container}>
 
             {loading && <h1>cargando...</h1>}
             {error && <div>{error}</div>}

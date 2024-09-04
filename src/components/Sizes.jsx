@@ -1,8 +1,8 @@
 
 import { useState } from "react";
+import sizesList from "../util/sizeList.js";
 import styles from "./Sizes.module.css";
 
-const sizesList = ["XS", "S", "M", "L", "XL", "XXL"];
 const Sizes = ({ handleSelection }) => {
     const [currentSelect, setCurrentSelect] = useState("S");
 

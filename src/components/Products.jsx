@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Request from "../util/getRequest";
 import CardWhitImg from "./Card";
+import styles from "./Products.module.css";
 
 const Products = () => {
     const { state: info } = useLocation();
@@ -36,12 +37,12 @@ const Products = () => {
     }, [])
 
     return (
-        <>
-            <header>
+        <div>
+            <header className={styles.title}>
                 <h1>{info.nameCategory}</h1>
             </header>
 
-            <main>
+            <div className={styles.container}>
                 {loading && <h1>cargando...</h1>}
                 {error && <div>{error}</div>}
                 {products && products.map((product, index) => {
@@ -58,8 +59,8 @@ const Products = () => {
                         </CardWhitImg>
                     )
                 })}
-            </main>
-        </>
+            </div>
+        </div>
     )
 
 }
