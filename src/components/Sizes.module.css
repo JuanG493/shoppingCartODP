@@ -7,8 +7,11 @@
 .size {
     border-radius: 10px;
     composes: primaryBg from "./colors.module.css";;
+    composes: primaryColor from "./colors.module.css";;
+
     font-weight: bold;
     padding: 1%;
+    cursor: pointer;
 }
 .selected{
     composes: size;

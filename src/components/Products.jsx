@@ -1,16 +1,13 @@
-
-//mostrar categorias dentro de la categoria especifica
-
 import { PropTypes } from "prop-types";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Request from "../util/getRequest";
 import CardWhitImg from "./Card";
+import stylesB from "./Categories.module.css";
 import styles from "./Products.module.css";
 
 const Products = () => {
     const { state: info } = useLocation();
-    // console.log(info);
 
     const [products, setProducts] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -43,7 +40,7 @@ const Products = () => {
             </header>
 
             <div className={styles.container}>
-                {loading && <h1>cargando...</h1>}
+                {loading && <h1 className={stylesB.carga}>Cargando...</h1>}
                 {error && <div>{error}</div>}
                 {products && products.map((product, index) => {
                     let link = product.thumbnail;

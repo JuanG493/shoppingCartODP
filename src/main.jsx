@@ -1,8 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import routes from './routes/routes'
-// import './components/index.css'
+import '@fontsource/ubuntu-mono';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
+import routes from './routes/routes';
 
 
 const router = createBrowserRouter(routes)

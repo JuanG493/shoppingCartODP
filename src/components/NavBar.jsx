@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import threadsLogo from '../assets/threads.png';
 import listCategories from "../util/listCategories";
+import ShoppingCar from "./Basket";
 import styles from "./NavBar.module.css";
 
 const NavBar = () => {
 
     return (
         <div className={styles.container}>
-            <img className={styles.logo} src={threadsLogo} alt="company-logo"></img>
+            <Link to={"/"}>
+                <img className={styles.logo} src={threadsLogo} alt="company-logo"></img>
+            </Link>
             <ul className={styles.links}>
                 <li>
                     <Link to={"/"}>Home</Link>
@@ -21,9 +24,9 @@ const NavBar = () => {
                             {cat.title}</Link>
                     </li>
                 ))}
-                <li>
-                    <Link to={"payment"}>Car</Link>
-                </li>
+                <Link to={"payment"}>
+                <ShoppingCar></ShoppingCar>
+                </Link>
             </ul>
         </div>
     )

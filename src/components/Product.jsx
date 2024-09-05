@@ -1,9 +1,9 @@
-import { useLocation } from "react-router-dom";
-import Sizes from "./Sizes";
-
 import { useContext, useState } from "react";
+import { useLocation } from "react-router-dom";
 import styles from "./Button.module.css";
 import { carContext } from "./carContex";
+import stylesB from "./Product.module.css";
+import Sizes from "./Sizes";
 
 const Product = () => {
     const { addProduct } = useContext(carContext);
@@ -18,20 +18,19 @@ const Product = () => {
         id: (info.id + info.sku +size),
         name: info.title,
         price: info.price,
-        size: size, //TODO
+        size: size, 
         sku: info.sku,
         thumbnail: info.thumbnail,
         cuantity: 1
     }
     //TODO  reviews
     return (
-        <>
-            <h1> {info.title} </h1>
-            <main>
+        <div className={stylesB.container}>
+            <div className={stylesB.preview}>
                 <div>
                     <img src={info.thumbnail} alt={info.title} />
                 </div>
-                <div>
+                <div className={stylesB.containerInfo}>
                     <h1>{info.title}</h1>
                     <h3>Price: {info.price}</h3>
                     <p>{info.description}</p>
@@ -43,8 +42,8 @@ const Product = () => {
                      className={styles.shopping}
                      >Add to my &#128722;</button>
                 </div>
-            </main>
-        </>
+            </div>
+        </div>
     )
 }
 

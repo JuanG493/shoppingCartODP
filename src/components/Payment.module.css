@@ -1,21 +1,24 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
+    min-height: 100vh;
 }
 
 .product {
+    width: 75%;
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
-    composes: primaryBg from "./colors.module.css";
-    composes: primaryBorder from "./colors.module.css";
-
+    composes: thirdColor from "./colors.module.css";
+}
+.product:hover{
+    background-color: #bf764b11;
 }
 .information{
-    align-self: center;
+    width: 25%;
     justify-self: center;
-    text-align: center;
 }
 .sumRes{
     display: flex;
@@ -23,8 +26,7 @@
     align-items: center;
     border-radius: 10px;
     composes: secondaryBg from "./colors.module.css";
-    composes: primaryBorder from "./colors.module.css";
-
+    composes: primaryColor from "./colors.module.css";
 }
 .sumRes:hover{
     box-shadow: 3px 3px 5px #BF754B;
@@ -53,4 +55,11 @@
 
 .trash:hover{
     box-shadow: 3px 3px 5px #BF754B;
+}
+.trashElm{
+    transition: transform 1s ease-out 0.2s;
+    
+}
+.trashElm:hover{
+    transform: rotateZ(120deg);
 }

@@ -1,6 +1,3 @@
-
-//manejar el pago y la eliminacion de los productos
-
 import { useContext } from "react";
 import { carContext } from "./carContex";
 import styles from "./Payment.module.css";
@@ -10,7 +7,6 @@ const Payment = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Hello from payment</h1>
             {car.map(product => {
                 return (
                     <div className={styles.product} key={product.id}>
@@ -40,13 +36,12 @@ const Payment = () => {
                         <div
                             className={styles.trash}
                             onClick={() => deleteProduct(product.id)}
-                        >&#128465;</div>
+
+                        ><div className={styles.trashElm}>&#128465;</div></div>
                     </div>
                 )
             })}
         </div>
     )
 }
-
-//TODO button pago y eliminar los productos del carrito?
 export default Payment;

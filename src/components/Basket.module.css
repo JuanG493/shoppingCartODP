@@ -1,0 +1,13 @@
+.svgContainer {
+    transition: transform 1s ease-out;
+}
+
+.svgContainer:hover {
+    transform: rotate(360deg);
+    fill: #8C4C27;
+}
+
+.text {
+    font-size: 3cap;
+    font-weight: bold;
+}

@@ -43,7 +43,7 @@ const Categories = () => {
     return (
         <div className={styles.container}>
 
-            {loading && <h1>cargando...</h1>}
+            {loading && <h1 className={styles.carga}>cargando...</h1>}
             {error && <div>{error}</div>}
             {categories && categories.map(elm => {
 

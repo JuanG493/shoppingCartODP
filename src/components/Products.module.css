@@ -1,6 +1,7 @@
 .title{
     text-align: center;
     text-transform: capitalize;
+    composes: thirdColor from "./colors.module.css"
 }
 .container{
     display: flex;

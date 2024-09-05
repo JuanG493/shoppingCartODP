@@ -2,6 +2,8 @@ import { PropTypes } from "prop-types";
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 
+
+
 const CardWhitImg = (props) => {
     return (
         <div className={styles.container}>

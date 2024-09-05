@@ -1,18 +1,16 @@
 .container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    gap: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
     border-radius: 10px;
-    margin-bottom: 2%;
-    composes: primaryBg from "./colors.module.css";
-    composes: primaryBorder from "./colors.module.css"
+    margin-bottom: 5%;
 }
 
 .links {
-    width: 100%;
+    width: 30%;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
+    align-items: center;
     gap: 5%;
     padding: 0;
     flex-wrap: wrap;
@@ -22,10 +20,10 @@
     text-decoration: none;
     list-style: none;
     background-color: #8C4C27;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
-    padding: 6px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 100px 0px / 120px ;
 }
 
 a{
@@ -36,8 +34,11 @@ li:hover{
     box-shadow: 3px 3px 5px #BF754B;
 }
 
-
 .logo{
     width: 200px;
     height: 200px;
+}
+.carLogo{
+    width: 100px;
+    height: 100px;
 }

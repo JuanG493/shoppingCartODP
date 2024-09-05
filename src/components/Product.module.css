@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    composes: thirdColor from "./colors.module.css"
+}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerInfo{
+    width: 40%;
+    flex-wrap: wrap;
+}
