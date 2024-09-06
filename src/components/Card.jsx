@@ -9,8 +9,11 @@ const CardWhitImg = (props) => {
         <div className={styles.container}>
             <img src={props.srcImg} alt={props.name} className={styles.img} />
             <button className={styles.button}>
-                <Link to={props.to} state={props.info}>
-                    {props.name}</Link>
+                <Link
+                    to={props.to}
+                    state={props.info}
+                >
+                    {props.name.includes("-") ? props.name.split("-")[1]: props.name}</Link>
             </button>
         </div>
     )

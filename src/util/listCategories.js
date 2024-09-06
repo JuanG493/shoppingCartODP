@@ -1,18 +1,15 @@
 const listCategories = [
     {
         id: 1,
-        title: "mens",
+        title: "men",
         subCategories: [
             "mens-shirts",
             "mens-shoes",
             "mens-watches"]
-        // subCategories: [
-            // "mens-shirts"
-        // ]
     },
     {
         id: 2,
-        title: "womens",
+        title: "women",
         subCategories: [
             "womens-bags",
             "womens-dresses",

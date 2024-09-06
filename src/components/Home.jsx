@@ -12,14 +12,14 @@ const Home = () => {
                 <Link
                     to={"categories/mens"}
                     state={listCategories[0].subCategories}
-                    className={styles.button}>Mens</Link>
+                    className={styles.button}>Men</Link>
             </div>
             <div className={styles.contImg}>
                 <img className={styles.imagen} src={women} alt="women"></img>
                 <Link
                     to={"categories/womens"}
                     state={listCategories[1].subCategories}
-                    className={styles.button}>Womens</Link>
+                    className={styles.button}>Women</Link>
             </div>
 
         </div>

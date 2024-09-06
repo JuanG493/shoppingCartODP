@@ -36,7 +36,7 @@ const Products = () => {
     return (
         <div>
             <header className={styles.title}>
-                <h1>{info.nameCategory}</h1>
+                <h1>{info.nameCategory.split("-")[1]}</h1>
             </header>
 
             <div className={styles.container}>
