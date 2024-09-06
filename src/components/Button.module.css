@@ -21,7 +21,6 @@
     composes: primaryBg from "./colors.module.css";
     composes: secondaryColor from "./colors.module.css";
     composes: primaryBorder from "./colors.module.css";
-    composes: primaryBorder from "./colors.module.css";
 
 }
 

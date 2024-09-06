@@ -14,6 +14,7 @@ const Product = () => {
         setSize(sx)
     }
 
+    //this obj will be send
     const product = {
         id: (info.id + info.sku +size),
         name: info.title,
@@ -21,7 +22,9 @@ const Product = () => {
         size: size, 
         sku: info.sku,
         thumbnail: info.thumbnail,
-        cuantity: 1
+        cuantity: 1,
+        discount: info.discountPercentage
+
     }
     //TODO  reviews
     return (
@@ -35,7 +38,7 @@ const Product = () => {
                     <h3>Price: {info.price}</h3>
                     <p>{info.description}</p>
                     <Sizes handleSelection={handleSize} ></Sizes>
-                    <h3>Discount: {info.discountPercentage}</h3>
+                    <h3>Discount Percentage: {info.discountPercentage}%</h3>
                     <h3>Stock: {info.stock}</h3>
                     <button
                      onClick={() => addProduct(product)}

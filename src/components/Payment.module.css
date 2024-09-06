@@ -1,26 +1,42 @@
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 5px;
     min-height: 100vh;
+    position: relative;
+}
+
+.containerProducts {
+    min-width: 60vw;
+    scroll-behavior: auto;
+
 }
 
 .product {
-    width: 75%;
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
+    flex-wrap: wrap;
     composes: thirdColor from "./colors.module.css";
 }
-.product:hover{
+  @media (max-width: 635px) {
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
+
+.product:hover {
     background-color: #bf764b11;
 }
-.information{
-    width: 25%;
+
+.information {
     justify-self: center;
 }
-.sumRes{
+
+.sumRes {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -28,10 +44,12 @@
     composes: secondaryBg from "./colors.module.css";
     composes: primaryColor from "./colors.module.css";
 }
-.sumRes:hover{
+
+.sumRes:hover {
     box-shadow: 3px 3px 5px #BF754B;
 }
-.operator{
+
+.operator {
     cursor: pointer;
     width: 10px;
     font-size: 2cap;
@@ -53,13 +71,30 @@
     font-size: x-large;
 }
 
-.trash:hover{
+.trash:hover {
     box-shadow: 3px 3px 5px #BF754B;
 }
-.trashElm{
+
+.trashElm {
     transition: transform 1s ease-out 0.2s;
-    
 }
-.trashElm:hover{
+
+.trashElm:hover {
     transform: rotateZ(120deg);
+}
+
+.resume {
+    position: fixed;
+    top: 45vh;
+    left: 81vw;
+
+}
+
+  @media (max-width: 1200px) {
+    .resume {
+        margin-top: 5%;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
 }

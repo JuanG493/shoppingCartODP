@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+.information > div{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout{
+    margin-top: 5%;
+    align-self: flex-end;
+    composes : shopping from "./Button.module.css";
+}
